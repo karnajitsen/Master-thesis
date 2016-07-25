@@ -1,0 +1,7 @@
+set terminal pdf
+set output 'Plots_GPU.pdf'
+set xlabel 'Input Data size in KB'
+set ylabel 'Time in microsecond'
+set title 'Experiment 1: GPU bencharking : K20'
+plot "data/result.txt" title "GPU" with lines
+
