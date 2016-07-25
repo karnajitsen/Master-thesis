@@ -39,7 +39,7 @@ __global__ void VecAdd(Real* A, int* N, Real* d_time)
    //*d_time = ((tv2.tv_sec-tv1.tv_sec)*1000000.0 + (tv2.tv_usec-tv1.tv_usec));
      
    end_t = clock();
-   *d_time = (double)(end_t - start_t) ; 
+   *d_time = (double)(end_t - start_t)/CLOCKS_PER_SEC ; 
    //printf("\n%d %d %f \n", start_t, end_t, *d_time);
    
    

@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
    Real *A, *d_A;
    int *d_N;// *B, *C, *d_A, *d_B, *d_C ;           
    std::ofstream fp;
-   fp.open("/home/hpc/ihpc/ihpc002h/gpu-exp/data/result.txt", std::ofstream::app);
+   fp.open("/home/hpc/ihpc/ihpc002h/gpu-exp/Master-thesis/data/result.txt", std::ofstream::app);
     double *d_time, h_time;
     A  = (Real*)malloc(N*sizeof(Real)); 
    // B  = (Real*)malloc(N*sizeof(Real)); 
